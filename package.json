@@ -1,0 +1,28 @@
+{
+  "name": "age-calculator-roadmap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "dev": "vite"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdelmouizz/age-calculator-roadmap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/abdelmouizz/age-calculator-roadmap/issues"
+  },
+  "homepage": "https://github.com/abdelmouizz/age-calculator-roadmap#readme",
+  "dependencies": {
+    "js-datepicker": "^5.18.4",
+    "luxon": "^3.7.2"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
