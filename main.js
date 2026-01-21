@@ -8,8 +8,7 @@ datepicker('#birthdate', {
     formatter: (input, date) =>{
         const year = date.getFullYear();
         const month = String(date.getMonth() + 1).padStart(2, '0');
-        const day = String(date.getDate()).padStart(2, '0');
-        input.value = `${year}-${month}-${day}`;
+        input.value = `${year}-${month}`;
     }
 });
 const form = document.getElementById('ageForm');
@@ -24,9 +23,10 @@ form.addEventListener('submit', (e) => {
 
     if (!birthDate.isValid || birthDate > now) {
     result.textContent = 'Please enter a valid birthdate.';
+    result.style.color = 'red';
     return;
 }
-const age = now.diff(birthDate, ['years', 'months', 'days']).toObject();
+const age = now.diff(birthDate, ['years', 'months']).toObject();
 result.textContent =
-`You are ${Math.floor(age.years)} years, ${Math.floor(age.months)} months, and ${Math.floor(age.days)} days old.`;
+`You are  ${Math.floor(age.years)}  years ${Math.floor(age.months)} months old.`;
 });

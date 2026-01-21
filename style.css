@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 body {
     font-family: Arial, sans-serif;
     max-width: 400px;
@@ -7,11 +8,19 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 4em;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+    font-size: 2em;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 input, button {
@@ -21,11 +30,24 @@ input, button {
 }
 
 button {
+    margin-left: 13px;
     cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(78, 77, 77);
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
 }
 
 #result {
     margin-top: 20px;
     font-weight: bold;
     text-align: center;
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
 }
